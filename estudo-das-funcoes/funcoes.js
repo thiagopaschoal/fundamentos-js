@@ -25,3 +25,13 @@ console.log(imprimirSomaUsandoFuncaoAnonima(2,3,4,5,6))
 console.log(imprimirSomaUsandoArrowFunction(2,2))
 console.log(imprimirSomaUsandoArrowFunction(3))
 console.log(imprimirSomaUsandoArrowFunction(2,3,4,5,6))
+
+const soma = (a,b) => a + b;
+
+const calculadora = (a,b,operacao = soma) => {
+  return operacao(a,b)
+}
+
+console.log(calculadora(3,2))
+console.log(calculadora(4,2, (a,b) => a - b));
+console.log(calculadora(3,3, (a,b) => a * b));
