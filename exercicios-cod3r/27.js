@@ -1,0 +1,3 @@
+const crianca = (altura, taxaDeCrescimento) => {
+    
+}
