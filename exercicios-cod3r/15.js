@@ -1,21 +1,17 @@
-function carros(nome) {
+const carros = (nome) => {
   switch (nome) {
     case "hatch":
-      console.log("Compra efetuada com sucesso");
-      break;
+      return "Compra efetuada com sucesso";
     case "sedan":
-      console.log("Tem certeza que não prefere este modelo?");
-      break;
+      return "Tem certeza que não prefere este modelo?";
     case "motocicletas":
-      console.log("Tem certeza que não prefere este modelo?");
-      break;
+      return "Tem certeza que não prefere este modelo?";
     case "caminhonetes":
-      console.log("Tem certeza que não prefere este modelo?");
-      break;
+      return "Tem certeza que não prefere este modelo?";
     default:
-      console.error("Não trabalhamos com este tipo de automóvel aqui")
+      return "Não trabalhamos com este tipo de automóvel aqui";
   }
-}
+};
 
-console.log(carros("hatch"))
-console.log(carros("sedan"))
+console.log(carros("hatch"));
+console.log(carros("sedan"));

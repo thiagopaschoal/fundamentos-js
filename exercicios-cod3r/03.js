@@ -1,5 +1,2 @@
-console.log(exponencial(2,3))
-
-function exponencial(base, expoente) {
-  return Math.pow(base, expoente)
-}
+const exponencial = (base, expoente) => Math.pow(base, expoente);
+console.log(exponencial(2, 3));

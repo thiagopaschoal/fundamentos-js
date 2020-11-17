@@ -1,20 +1,17 @@
-function feira(fruta) {
+const feira = (fruta) => {
   switch (fruta) {
     case "maçã":
-      console.log("Não vendemos esta fruta aqui");
-      break;
+      return "Não vendemos esta fruta aqui";
     case "kiwi":
-      console.log("Estamos com escassez de kiwis");
-      break;
+      return "Estamos com escassez de kiwis";
     case "melancia":
-      console.log("Aqui está, são 3 reais o quilo");
-      break;
+      return "Aqui está, são 3 reais o quilo";
     default:
-      console.error("fruta invalida");
+      return "fruta invalida";
   }
-}
+};
 
-console.log(feira("kiwi"))
-console.log(feira("maçã"))
-console.log(feira("melancia"))
-console.log(feira("caju"))
+console.log(feira("kiwi"));
+console.log(feira("maçã"));
+console.log(feira("melancia"));
+console.log(feira("caju"));

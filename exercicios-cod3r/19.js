@@ -1,4 +1,4 @@
-function cardapio(codigo, quantidade, precoAPagar) {
+const cardapio = (codigo, quantidade, precoAPagar) => {
   switch (codigo) {
     case 100:
       return precoAPagar * quantidade;
@@ -13,8 +13,8 @@ function cardapio(codigo, quantidade, precoAPagar) {
     case 600:
       return precoAPagar * quantidade;
     default:
-      console.error("produto nao existe")
+      console.error("produto nao existe");
   }
-}
+};
 
-console.log(cardapio(300, 2, 3.5))
+console.log(cardapio(300, 2, 3.5));

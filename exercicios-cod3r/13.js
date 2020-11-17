@@ -1,29 +1,21 @@
+const dias = {
+  1: "fim de semana",
+  2: "dia util",
+  3: "dia util",
+  4: "dia util",
+  5: "dia util",
+  6: "dia util",
+  7: "fim de semana",
+};
+
 function ehDiaUtil(dia) {
-  switch (dia) {
-    case 1:
-      console.log("fim de semana");
-      break;
-    case 2:
-      console.log("dia util");
-      break;
-    case 3:
-      console.log("dia util");
-      break;
-    case 4:
-      console.log("dia util");
-      break;
-    case 5:
-      console.log("dia util");
-      break;
-    case 6:
-      console.log("dia util");
-      break;
-    case 7:
-      console.log("fim de semana");
-      break;
-    default:
-      console.error("dia invalido")
-  }
+  const msg = Object.keys(dias).reduce((acc, key) => {
+    const toNumber = parseInt(key);
+    if (toNumber === dia) return dias[key];
+    return acc;
+  }, 0);
+  return msg === 0 ? "dia invalido" : msg;
 }
-console.log(ehDiaUtil(12))
-console.log(ehDiaUtil(5))
+
+console.log(ehDiaUtil(12));
+console.log(ehDiaUtil(5));
